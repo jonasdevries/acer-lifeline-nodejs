@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Create User</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Create User</h1>
+    <form id="create-user-form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit">Create and Invite User</button>
+    </form>
+    <div id="message" class="error" style="display:none;"></div>
+</div>
+<div class="container">
+    <h2>Users</h2>
+    <table id="users-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Users will be dynamically inserted here -->
+        </tbody>
+    </table>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
